@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checkout Stage: Cloning the repository...'
-                git url: 'https://github.com/repoTest/JenkinsTest.git', branch: 'main', credentialsId: 'github-credentials-id'
+                git url: 'https://github.com/Tom8797438/repoTest.git', branch: 'main', credentialsId: 'github-credentials-id'
             }
         }
         stage('Build') {
